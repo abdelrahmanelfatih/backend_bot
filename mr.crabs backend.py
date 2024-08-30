@@ -4,7 +4,7 @@ from typing import final
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-KEY: final = '7301010584:AAFRMvnjkI8bKMnkERH3jTUdIYYYmwGIS9c'
+KEY: final = 'YOUR_KEY'
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for the app
@@ -41,7 +41,7 @@ async def create_invoice(update: Update, context: ContextTypes.DEFAULT_TYPE):
         title=title,
         description=description,
         payload="invoice_payload",
-        provider_token="284685063:TEST:NGZiNDgxNWFjY2I0",
+        provider_token="YOUR_TOKEN",
         currency=currency,
         prices=prices,
         start_parameter="start",
